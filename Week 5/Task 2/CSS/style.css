@@ -14,11 +14,13 @@ span {
 .top {
     display: flex;
     justify-content: space-around;
+
 }
 
 .top .menu ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 a:hover {
@@ -52,7 +54,7 @@ a {
     background: none;
     border: 1px solid #212832;
     border-radius: 5px;
-    padding: 0px 20px;
+    padding: 15px 20px;
 }
 
 
