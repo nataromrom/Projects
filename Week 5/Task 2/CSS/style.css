@@ -1,111 +1,101 @@
+header {
+    background-repeat: no-repeat;
+    background-image: url('/Projects/Week 5/Task 2/img/Decore.png');
+    background-position: right top;
+}
+
+span {
+    background-repeat: no-repeat;
+    background-image: url('/Projects/Week 5/Task 2/img/Decore2.png');
+    background-position: 5% 90%;
+    background-size: 145%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.top .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu {
+    font-family: sans-serif;
+}
+
+.top .menu ul li {
+    margin: 20px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #logo {
-    position: absolute;
     width: 214.91px;
     height: 123.99px;
-    left: 140.92px;
-    top: 5.7px;
+}
+
+#btn3 {
+    background: none;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 0px 20px;
 }
 
 
-#girl {
-    position: absolute;
-    width: 783.87px;
-    height: 764px;
-    left: 565px;
-    top: 105px;
+#divText {
+    width: 40%;
 }
-
-#deco {
-    position: absolute;
-    width: 766.31px;
-    height: 872.58px;
-    left: 736px;
-    top: -149px;
-    background-repeat: no-repeat;
-}
-
 
 h1 {
-    position: absolute;
-    width: 410px;
-    height: 30px;
-    left: 148px;
-    top: 231px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    /* identical to box height */
-
     text-transform: uppercase;
-
     color: #DF6951;
+    padding: 0px 0px 0px 50px;
 }
 
 h2 {
-    position: absolute;
-    width: 545px;
-    height: 267px;
-    left: 148px;
-    top: 215px;
-
     font-family: Volkhov;
     font-style: normal;
     font-weight: bold;
     font-size: 84px;
     line-height: 89px;
-    /* or 106% */
-
     letter-spacing: -0.04em;
-
-    /* 1st */
-
     color: #181E4B;
-}
-
-#deco2 {
-    position: absolute;
-    width: 385px;
-    height: 12px;
-    left: 393px;
-    top: 355px;
+    padding: 0px 0px 0px 50px;
+    margin: 0;
 }
 
 #text {
-    position: absolute;
-    width: 477px;
-    height: 90px;
-    left: 146px;
-    top: 552px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    /* or 187% */
     color: #5E6282;
+    padding: 0px 50px;
 }
-
-
-#divtext {
-    position: absolute;
-    width: 630px;
-    height: 535px;
-    left: 146px;
-    top: 231px;
-}
-
-
 
 #btn1 {
-    position: absolute;
     width: 170px;
     height: 60px;
-    left: 146px;
-    top: 706px;
     background: #F1A501;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
     border-radius: 10px;
@@ -116,65 +106,55 @@ h2 {
 }
 
 #btn2 {
-    position: absolute;
     width: 52px;
     height: 52px;
-    left: 360px;
-    top: 710px;
     background: #DF6951;
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
     border-radius: 50%;
     border: white;
 }
 
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn2 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    left: -9%;
+}
+
+#centerPol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #polig {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 380px;
-    top: 730px;
+    position: relative;
+    left: -30px;
 }
 
-
-nav {
-    position: absolute;
-    width: 1200px;
-    height: 62px;
-    left: 350px;
-    top: 25px;
-    font-family: sans-serif;
-}
-
-.menu .item {
-    display: inline-block;
-    padding: 10px 40px;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-#btn3 {
-    background: none;
-    border: 1px solid #212832;
-    border-radius: 5px;
+#deco2 {
+    position: relative;
+    top: 89px;
+    left: 293px;
+    z-index: -1;
 }
 
 #txtbtn {
-    position: absolute;
-    width: 92px;
-    height: 26px;
-    left: 433px;
-    top: 715px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
-
     color: #686D77;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.container {
+    display: flex;
 }
