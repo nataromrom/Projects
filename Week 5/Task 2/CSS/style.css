@@ -1,12 +1,12 @@
 header {
     background-repeat: no-repeat;
-    background-image: url('/Projects/Week 5/Task 2/img/Decore.png');
+    background-image: url(../img/Decore.png);
     background-position: right top;
 }
 
 span {
     background-repeat: no-repeat;
-    background-image: url('/Projects/Week 5/Task 2/img/Decore2.png');
+    background-image: url(../img/Decore2.png);
     background-position: 5% 90%;
     background-size: 145%;
 }
