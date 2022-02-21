@@ -1,65 +1,86 @@
  * {
-     font-weight: 700;
+     font-weight: 800;
      text-align: center;
      font-family: Arial, Helvetica, sans-serif;
  }
 
- main {
-     display: flex;
-     height: 80vh;
+ .container {
+     display: grid;
+     height: 100vh;
+     grid-template-columns: 2fr 1fr;
+     grid-template-rows: 1fr 6fr 1.2fr;
+     grid-template-areas:
+         "hed hed"
+         "con sid"
+         "fot fot ";
  }
 
-
- header {
-     background-color: rgb(224, 224, 224);
-     padding: 20px;
- }
-
- aside {
-     flex: 1;
-     background-color: rgb(221, 236, 203);
-     padding: 15px;
- }
-
- #s1 {
-     flex: 3;
+ .content {
+     display: grid;
+     grid-area: con;
      background-color: rgb(255, 248, 227);
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     padding: 15px;
+     padding: 25px;
+     /* align-items: space-between; */
  }
 
- #s2 {
-
-     display: flex;
-     flex-wrap: wrap;
-     align-content: flex-end;
+ .content1 {
+     display: grid;
+     background-color: rgb(255, 248, 227);
+     margin-top: auto;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas:
+         "m1 m2"
+         "m3 m3";
  }
 
- footer {
-     display: flex;
-     justify-content: space-between;
+ .header {
+     grid-area: hed;
      background-color: rgb(224, 224, 224);
      padding: 20px;
+ }
+
+ .sidebar {
+     grid-area: sid;
+     background-color: rgb(221, 236, 203);
+     padding: 25px;
+ }
+
+
+ .footer {
+     grid-area: fot;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 40px;
+     background-color: rgb(224, 224, 224);
+     padding: 20px;
+
  }
 
  .foot {
      background-color: rgb(243, 243, 243);
-     padding: 20px;
+     padding: 60px;
+
  }
 
  .main {
-
      background-color: rgb(254, 234, 185);
      margin: 10px;
      padding: 10px;
-     align-self: flex-end;
-     flex: 1 0 auto;
-     min-width: 30vh;
+
  }
 
- #section3 {
-     min-width: 100vh;
-     flex: 5 0 auto;
+ .main1 {
+     grid-area: m1;
+     padding: 25px;
+ }
+
+ .main2 {
+     grid-area: m2;
+     padding: 25px;
+ }
+
+ .main3 {
+     grid-area: m3;
+     padding: 25px;
  }
