@@ -135,7 +135,7 @@ a {
 .img3 {
     position: absolute;
     top: -30%;
-    right: 0%;
+    right: 5%;
 }
 
 .content1 {
@@ -219,24 +219,25 @@ a {
 
 .Toys1 {
     background-color: #F8F8F8;
-    height: 588px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 70px 1fr;
     grid-template-areas:
         "bigtxt bigtxt bigtxt smltxt"
         "toys toys toys toys";
+
 }
 
-.top1 {
-    /* grid-area: top1; */
-    /* display: flex; */
-}
 
 .toys {
     grid-area: toys;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    border-top: 3px solid #E5E5E5;
+    margin: 0 120px;
+
+
 }
 
 .item {
@@ -269,7 +270,7 @@ a {
     font-size: 28px;
     grid-row: 1;
     grid-column: 1;
-    margin-left: 1em;
+    margin-left: 5em;
     align-self: center;
 }
 
@@ -281,6 +282,12 @@ a {
     align-self: center;
     justify-self: end;
     margin-right: 30px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.smltxt::after {
+    content: url(../img/str.png);
+    margin-left: 10px;
 }
 
 
@@ -297,7 +304,7 @@ a {
 
 .white {
     color: #FFFFFF;
-
+    margin-left: 10px;
 }
 
 .line {
@@ -306,6 +313,9 @@ a {
     margin: 0 135px;
     grid-row: 2;
     grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icongreenft {
