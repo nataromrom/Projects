@@ -8,7 +8,7 @@
      display: grid;
      height: 100vh;
      grid-template-columns: 2fr 1fr;
-     grid-template-rows: 1fr 6fr 1.2fr;
+     grid-template-rows: 60px 7fr 1fr;
      grid-template-areas:
          "hed hed"
          "con sid"
