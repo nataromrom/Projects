@@ -1,0 +1,111 @@
+ * {
+     font-weight: 800;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .content {
+     display: grid;
+     grid-area: con;
+     background-color: rgb(255, 248, 227);
+     padding: 25px;
+ }
+
+ .content1 {
+     display: grid;
+     background-color: rgb(255, 248, 227);
+     margin-top: auto;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas:
+         "m1 m2"
+         "m3 m3";
+ }
+
+ .header {
+     grid-area: hed;
+     background-color: rgb(224, 224, 224);
+     padding: 20px;
+ }
+
+ .sidebar {
+     grid-area: sid;
+     background-color: rgb(221, 236, 203);
+     padding: 25px;
+ }
+
+
+
+ @media screen and (min-width: 1024px) {
+     .footer {
+         grid-area: fot;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 40px;
+         background-color: rgb(224, 224, 224);
+         padding: 20px;
+     }
+
+     .foot {
+         background-color: rgb(243, 243, 243);
+         padding: 40px;
+     }
+
+     .container {
+         display: grid;
+         height: 100vh;
+         grid-template-columns: 2fr 1fr;
+         grid-template-rows: 60px 7fr 1fr;
+         grid-template-areas:
+             "hed hed"
+             "con sid"
+             "fot fot ";
+     }
+
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+     .footer {
+         display: none;
+     }
+
+     .container {
+         display: grid;
+         height: 100vh;
+         grid-template-columns: 2fr 1fr;
+         grid-template-rows: 60px 7fr;
+         grid-template-areas:
+             "hed hed"
+             "con sid";
+     }
+ }
+
+ @media screen and (max-width: 767px) {
+     .footer {
+         display: none;
+     }
+ }
+
+
+ .main {
+     background-color: rgb(254, 234, 185);
+     margin: 10px;
+     padding: 10px;
+
+ }
+
+ .main1 {
+     grid-area: m1;
+     padding: 25px;
+ }
+
+ .main2 {
+     grid-area: m2;
+     padding: 25px;
+ }
+
+ .main3 {
+     grid-area: m3;
+     padding: 25px;
+ }
