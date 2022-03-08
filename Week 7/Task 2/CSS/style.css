@@ -3,12 +3,12 @@
     text-align: center;
 }
 
-.up {
-    text-transform: uppercase;
-}
-
 img {
     max-width: 100%;
+}
+
+.up {
+    text-transform: uppercase;
 }
 
 a {
