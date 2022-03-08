@@ -85,6 +85,10 @@
      .footer {
          display: none;
      }
+
+     .sidebar {
+         height: 20vh;
+     }
  }
 
 
@@ -92,20 +96,22 @@
      background-color: rgb(254, 234, 185);
      margin: 10px;
      padding: 10px;
-
  }
 
  .main1 {
      grid-area: m1;
      padding: 25px;
+
  }
 
  .main2 {
      grid-area: m2;
      padding: 25px;
+
  }
 
  .main3 {
      grid-area: m3;
      padding: 25px;
+
  }
