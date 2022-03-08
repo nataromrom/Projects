@@ -28,13 +28,16 @@ h2 {
     /* font-size: 0.88em; */
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr;
-    grid-template-rows: 1fr 2fr 0.01fr;
-    grid-template-areas: "sidebar header"
-        "sidebar content"
-        "sidebar footer";
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 0.6fr 3fr;
+        grid-template-rows: 1fr 2fr 0.01fr;
+        grid-template-areas: "sidebar header"
+            "sidebar content"
+            "sidebar footer";
+    }
 }
 
 
@@ -125,6 +128,12 @@ h1 {
     height: 5vh;
 }
 
+.btn1,
+.btn2 {
+    min-height: 50px;
+    min-width: 50px;
+}
+
 .btn2 {
     color: #FFFFFF;
     background: #CF404D;
@@ -186,6 +195,8 @@ button {
 
 .btn3 {
     font-size: 0.5em;
+    min-height: 50px;
+    min-width: 60px;
 }
 
 .img img {
@@ -245,4 +256,53 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.10fr 0.01fr 2fr 0.01fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+    }
+
+    .btn1 {
+        margin-bottom: 4%;
+    }
+
+    .nav {
+        display: inline;
+    }
+
+    .nav a {
+        margin-right: 4%;
+    }
+
+    .sid1 {
+        margin-top: 0%;
+    }
+
+    .sid2 {
+        margin-top: 5%;
+    }
+
+    .header {
+        /* background-size: cover; */
+        margin-bottom: 0;
+    }
+
+    .m1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        min-width: 42%;
+        margin-top: 4%;
+    }
 }
