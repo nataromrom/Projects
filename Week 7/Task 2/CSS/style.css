@@ -25,9 +25,7 @@ h2 {
 
 .nav a:first-child {
     color: #CF404D;
-    /* font-size: 0.88em; */
 }
-
 
 @media screen and (min-width: 768px) {
     .container {
@@ -39,7 +37,6 @@ h2 {
             "sidebar footer";
     }
 }
-
 
 .sidebar {
     grid-area: sidebar;
@@ -63,26 +60,13 @@ h2 {
     background-image: url('../img/img1.png');
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: 100vw; */
     background-size: cover;
     margin-bottom: 2%;
-    /* display: flex; */
-    /*  justify-items: center;
-    align-items: center; */
 }
 
 .head1 {
     margin-top: 12%;
-
 }
-
-
-/* .content1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-} */
 
 .m1 {
     display: flex;
@@ -292,7 +276,6 @@ form {
     }
 
     .header {
-        /* background-size: cover; */
         margin-bottom: 0;
     }
 
