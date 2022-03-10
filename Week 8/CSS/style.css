@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    top: 93%;
+    width: 100vw;
+    height: 10vh;
+}
+
+footer p {
+    margin-top: 2%;
+}
+
+.container__card {
+    background-color: rgb(232, 236, 238);
+    border: none;
+    margin: 2% 0 2% 0;
+    padding: 3% 0 3% 0;
+}
