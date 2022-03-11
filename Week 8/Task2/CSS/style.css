@@ -25,7 +25,7 @@ body {
 .header__top {
     display: flex;
     justify-content: space-between;
-    margin: 0 5%;
+    margin-right: 5%;
     align-items: center;
 
 }
@@ -36,6 +36,7 @@ body {
     border-radius: 100px;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
 }
 
 
@@ -47,26 +48,23 @@ body {
 
 .header__content {
     display: flex;
+    justify-content: space-between;
 }
 
 .header__left {
-    width: 30%;
-    margin: 5% 10%;
+    width: 40%;
+    margin: 5% 0%;
 }
 
-.h1 {
-    text-transform: uppercase;
-    font-size: 60px;
-    font-weight: bolder;
-    Line-height: 72px;
-    margin: 0px;
+.content__title {
+    padding-bottom: 40px;
 }
 
-.nav_purple {
+.header_nav {
     color: #5222D0;
 }
 
-.nav {
+.header {
     margin-left: 10%;
 }
 
@@ -102,4 +100,83 @@ body {
     width: 115px;
     height: 38px;
     font-size: 13px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 130px;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 35px;
+    margin-right: 30px;
+
+}
+
+.content__text {
+    font-family: Roboto Slab;
+    font-size: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bolder;
+    Line-height: 72px;
+    margin: 0px;
+    width: 100%;
+}
+
+.content__card_active {
+    border: 1px solid #BB2247;
+    padding: 35px;
+}
+
+.content__card_position {
+    position: relative;
+    left: -30px;
+    margin-bottom: 40px;
+}
+
+.content__small-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.content__nav {
+    color: black;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.content__card-exclusive {
+    display: flex;
+    background-color: #EC615B;
+    color: #FFFFFF;
+    width: 365px;
+    height: 200px;
+}
+
+.button__subscribe {
+    Width: 135px;
+    Height: 38px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.input-form {
+    width: 323px;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+}
+
+.content__card_active img {
+    padding-bottom: 7px;
 }

@@ -10,22 +10,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
   <header class="header">
     <div class="header__top">
         <div class="logo">
-          <img  class="logo__img" src="img/sign.png" alt="">
-          <p>Виарушка </p>
+          <img class="logo__img" src="img/sign.png" alt="">
+          <p class="logo__text">Виарушка </p>
         </div> 
         <button class="button button__items">корзина <img src="img/ico1.png" alt=""></button>
     </div>
     <div class="header__content">
       <div class="header__left">
-          <h1 class="h1 header__h1">Виртуальная реальность без проводов</h1>
+          <h1 class="title">Виртуальная реальность без проводов</h1>
           <p class="header__text">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
           <button class="button button__buy">Купить <img class="header__image" src="img/ico.png" alt=""></button>
       </div>
@@ -33,14 +31,50 @@
           <img src="img/pic.png" alt="">
       </div>
     </div>
-    <nav class="nav nav_purple">
-        <a class="nav__item nav_purple" href="#">Возможности</a>
-        <a class="nav__item nav_purple" href="#">Где купить</a>
-        <a class="nav__item nav_purple" href="#">Доставка</a>
-        <a class="nav__item nav_purple" href="#">Помощь</a>
+    <nav class="nav header_nav">
+        <a class="nav__item header_nav" href="#">Возможности</a>
+        <a class="nav__item header_nav" href="#">Где купить</a>
+        <a class="nav__item header_nav" href="#">Доставка</a>
+        <a class="nav__item header_nav" href="#">Помощь</a>
     </nav>
   </header>
-
+<section class="content">
+  <h2 class="title content__title">возможности</h2> 
+  <div class="content__card content__card_active">
+    <img src="img/Illustration_4.png" alt="img">
+    <p class="content__small-title">Без проводов</p>
+    <p class="content__text">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание, ни большое помещение, чтобы расставить трекеры.</p>
+  </div>
+  <div class="content__card">
+    <img src="img/Illustration_2.png" alt="img">
+    <p class="content__small-title">Без компьютера</p>
+    <p class="content__text">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+  </div>
+  <div class="content__card">
+    <img src="img/Illustration_9.png" alt="img">
+    <p class="content__small-title">До 10 часов работы</p>
+    <p class="content__text">Несмотря на компактность и производительность, шлем может работать до 10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+  </div>
+  <div class="content__card content__card_active content__card_position">
+    <p class="content__small-title">Сотни игр</p>
+    <p class="content__text">Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</p>
+  </div>
+  <div class="content__card">
+    <p class="content__small-title">Почти даром</p>
+    <p class="content__text">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы существенно экономите на мощном компьютере.</p>
+  </div>
+  <div class="content__card content__card-exclusive">
+    <p class="content__small-title">Новости</p>
+    <input class="content__text input-form" type="text" value="Эл. почта">
+    <button class="button button__subscribe">Подписаться</button>
+  </div>
+<nav class="nav content__nav">
+    <a class="nav__item content__nav" href="#">Возможности</a>
+    <a class="nav__item content__nav" href="#">Где купить</a>
+    <a class="nav__item content__nav" href="#">Доставка</a>
+    <a class="nav__item content__nav" href="#">Помощь</a>
+</nav>
+</section>
 </body>
 
 </html>
