@@ -11,6 +11,13 @@
 
 <body>
   <div class="container">
+    <h2 class="title">Привет!</h2>
+    <label for="askName">Как тебя зовут:</label>
+    <input type="text" id="askName">
+    <div class="resultName"></div>
+    <button class="btnHello" onclick=hello()>Нажми меня</button>
+  </div>
+  <div class="container">
     <h2 class="title">Калькулятор</h2>
     <div>
         <div class="container">
@@ -39,9 +46,9 @@
   <div class="container">
     <h2 class="title">Галерея</h2>
     <div class="container__gallery">
-      <img class="icon" src="assets/img/img1.png" alt="Иконка" onclick="gallarySwitch(1)">
+      <img class="icon" src="assets/img/img1.png" alt="Иконка" onclick=gallarySwitch(1)>
       <img class="image" src="assets/img/img2.jpg" alt="Пейзаж">
-      <img class="icon" src="assets/img/img2.png" alt="Иконка"  onclick="gallarySwitch(3)">
+      <img class="icon" src="assets/img/img2.png" alt="Иконка"  onclick=gallarySwitch(3)>
     </div>
   </div>
   <script src="assets/js/main.js"></script>

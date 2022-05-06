@@ -35,3 +35,8 @@ function changeColor(className, color) {
 function gallarySwitch(num) {
     document.getElementsByClassName('image')[0].src = `assets/img/img${num}.jpg`;
 }
+
+function hello() {
+    let name = document.getElementById("askName").value;
+    document.getElementsByClassName("resultName")[0].textContent = `Привет, ${name}!`
+}
