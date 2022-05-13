@@ -1,36 +1,41 @@
-document.getElementById("result").readOnly = true
+document.getElementById("result").readOnly = true;
+let a;
+let b;
+let result = document.getElementById("result");
+
+
+function getValue() {
+    a = document.getElementById("figureOne").value;
+    b = document.getElementById("figureTwo").value; 
+};
 
 function addition() {
-    let a = document.getElementById("figureOne").value;
-    let b = document.getElementById("figureTwo").value;
-    let c = Number(a) + Number(b);
-    document.getElementById("result").value = `${a}+${b}=${c}`;
+    getValue ();
+    let c = +a + +b;
+    result.value = `${a}+${b}=${c}`;
 };
 
 function subtraction() {
-    let a = document.getElementById("figureOne").value;
-    let b = document.getElementById("figureTwo").value;
-    let c = Number(a) - Number(b);
-    document.getElementById("result").value = `${a}-${b}=${c}`;
+    getValue ();
+    let c = a - b;
+    result.value = `${a}-${b}=${c}`;
 };
 
 function multiplication() {
-    let a = document.getElementById("figureOne").value;
-    let b = document.getElementById("figureTwo").value;
-    let c = Number(a) * Number(b);
-    document.getElementById("result").value = `${a}*${b}=${c}`;
+    getValue ();
+    let c = a * b;
+    result.value = `${a}*${b}=${c}`;
 };
 
 function division() {
-    let a = document.getElementById("figureOne").value;
-    let b = document.getElementById("figureTwo").value;
+    getValue ();
     let c;
     if (b == 0) {
         c = "На ноль делить нельзя!";
-        document.getElementById("result").value = c;
+        result.value = c;
     } else {
-        c = Number(a) / Number(b);
-        document.getElementById("result").value = `${a}/${b}=${c}`;
+        c = a / b;
+        result.value = `${a}/${b}=${c}`;
     }
 };
 

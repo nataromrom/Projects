@@ -1,19 +1,24 @@
 
-var elem = document.querySelector(".container")
+if ("0") {
+    alert( 'Привет' );
+  }
+
+  
+let elem = document.querySelector(".container")
 
 design_select.onchange = function() {
     let variantDesighn = document.querySelector('#design_select').value;
     switch(variantDesighn) {
         case "1":
-            clearClasses()
+            clearClasses();
             elem.classList.add("white");
         break;
         case "2":
-            clearClasses()
+            clearClasses();
             elem.classList.add("blue");
         break;
         case "3":
-            clearClasses()
+            clearClasses();
             elem.classList.add("dark");
         break;
     }
