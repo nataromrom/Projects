@@ -1,9 +1,3 @@
-
-if ("0") {
-    alert( 'Привет' );
-  }
-
-  
 let elem = document.querySelector(".container")
 
 design_select.onchange = function() {
