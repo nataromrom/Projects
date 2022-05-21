@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Узнайте, сколько стоит ваш автомобиль</h1>
+        <p>Укажите параметры, чтобы увидеть оценку.</p>
+        <div class="container calcform">
+            <select name="carLable" size="1">
+                <option selected disabled>Марка</option>
+                <option value="200">BMW</option>
+                <option value="300">Rolls-Royce</option>
+                <option value="400">Mercedes</option>
+                <option value="100">Москвич</option>
+            </select>
+            <select name="carModel" size="1">
+                <option selected disabled>Модель</option>
+            </select>
+            <select name="carAge" size="1">
+                <option selected disabled>Год выпуска</option>
+                <option value="80000">2022</option>
+                <option value="70000">2021</option>
+                <option value="60000">2020</option>
+                <option value="50000">2019</option>
+                <option value="0">старше 2019</option>
+            </select>
+            <p>Тип топлива:</p>
+            <div class="start">
+                <input type="radio" name="fuel" id="id1" value="0">Бензин<br>
+                <input type="radio" name="fuel" id="id2" value="70000">Дизель<br>
+                <input type="radio" name="fuel" id="id2" value="170000">Электрический<br>
+            </div>
+            <select name="carType" size="1">
+                <option selected disabled>Тип кузова</option>
+                <option value="100000">Седан</option>
+                <option value="200000">Купэ</option>
+                <option value="300000">Хэтчбек</option>
+            </select>
+            <p>Дополнительные опции:</p>
+            <input type="checkbox" name="ch1" value="70000">парктроники<br>
+            <input type="checkbox" name="ch2" value="50000">камера заднего вида<br>
+            <input type="checkbox" name="ch3" value="100000">автозапуск<br>
+            <button class="btnform">Оценить</button>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
