@@ -1,0 +1,19 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    background-color: aquamarine;
+    color: darkslategrey;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+

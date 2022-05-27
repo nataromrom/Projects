@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.blue {
+    background-color:#3498db;
+    color: darkblue;
+}
+
+.white {
+    background-color: transparent;
+}
+
+.dark {
+    background-color: black;
+    color: rgb(224, 240, 53);
+}
