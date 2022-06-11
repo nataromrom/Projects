@@ -1,0 +1,23 @@
+.btn {
+    background-color: rgb(30, 199, 30);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    min-height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.comment-add {
+    color: gray;
+    margin-bottom: 5px;
+}
