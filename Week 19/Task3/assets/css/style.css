@@ -1,0 +1,121 @@
+.btnHello {
+    text-decoration: none;
+    color: #7f8c8d;
+    background: #fefefe;
+    padding: 5px 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    width: 120px;
+    position: relative;
+    height: 55px;
+    font: 400 16px verdana;
+}
+
+.btnHello:after {
+    content: "";
+    background: linear-gradient(to right, #2ecc71 10%, #3498db 10%, #3498db 20%, #8e44ad 20%, #8e44ad 30%, #e67e22 30%, #e67e22 40%, #c0392b 40%, #c0392b 50%, #2ecc71 50%, #2ecc71 60%, #3498db 60%, #3498db 70%, #8e44ad 70%, #8e44ad 80%, #e67e22 80%, #e67e22 90%, #c0392b 90%);
+    background-size: 200% 100%;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.btnHello:hover {
+    color: #34495e;
+}
+
+.title {
+    text-align: center;
+}
+
+.title:before {
+    content: "";
+    border-bottom: 1px solid #4bb;
+    border-top: 1px solid #4bb;
+    width: 40px;
+    height: 0.1em;
+    position: absolute;
+    top: 30px;
+    margin-left: -50px;
+}
+
+.title:after {
+    content: "";
+    border-bottom: 1px solid #4bb;
+    border-top: 1px solid #4bb;
+    width: 40px;
+    height: 0.1em;
+    position: absolute;
+    top: 30px;
+    margin-left: 10px;
+}
+
+.hello_image {
+    width: 150px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.btnCalculation {
+    width: 60px;
+    color: #1633a5;
+    font-weight: 900;
+    font-size: large;
+    margin: 5px;
+    background-color: #63d2f7b7;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.btnCalculation:hover {
+    background-color: #f7f063b7;
+    transition: 0.2s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.containerOne {
+    background-color:bisque;
+}
+.containerTwo {
+    background-color:aqua;
+}
+
+.containerOne,.containerTwo {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 100px;
+    cursor: pointer; 
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+}
+
+.container__gallery {
+    text-align: center;
+}
