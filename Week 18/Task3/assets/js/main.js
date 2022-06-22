@@ -2,7 +2,6 @@ let commentsPast = localStorage.getItem("comments");
 let field = document.querySelector(".comments"); 
 let str = document.querySelector("#typeComment"); 
 let btn = document.querySelector(".btn"); 
-/* let comments = []; */
 let author = document.getElementById("author");
 
 
@@ -55,7 +54,6 @@ function addComment() {
 
     field.innerHTML = commentsPast;
     field.innerHTML += commentHTML;
-   /*  localStorage.removeItem("comments"); */
     localStorage.setItem("comments", field.innerHTML);
     str.value = ""; 
 }
