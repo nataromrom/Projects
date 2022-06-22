@@ -15,7 +15,7 @@ function checkValidity(input) {
     let validity = input.validity;
 
     if (validity.patternMismatch) 
-		{ errors.push('Неверный формат заполнения поля ${ input.placeholder}'); }
+		{ errors.push(`Неверный формат заполнения поля ${ input.placeholder}`); }
     
     if (validity.valueMissing) 
 		{errors.push(`Поле ${ input.placeholder} не заполнено`); }

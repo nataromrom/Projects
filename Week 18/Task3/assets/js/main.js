@@ -2,7 +2,7 @@ let commentsPast = localStorage.getItem("comments");
 let field = document.querySelector(".comments"); 
 let str = document.querySelector("#typeComment"); 
 let btn = document.querySelector(".btn"); 
-let comments = [];
+/* let comments = []; */
 let author = document.getElementById("author");
 
 
@@ -33,47 +33,31 @@ function checkSpam(str) {
 
 
 function addComment() {
-
+    let commentsPast = localStorage.getItem("comments"); 
+    if (!str.value) {
+        return;
+    }
     let strCheck = checkSpam(str.value);
     let img = document.getElementById("img").value;
     author = document.getElementById("author").value;
-    let html = "";
 
     localStorage.setItem("name", author);
     localStorage.setItem("image", img);
 
-    if (strCheck && strCheck !==" ") {
-        comments.push(strCheck);
-    } 
+    let commentHTML = `
+    <div class="comment-add">
+        <img src="${img}" alt="" width="50" height="50"> 
+        <label class="form-check-label" for="action">
+        ${author}: ${strCheck}
+        </label>
+    </div>  
+    `
 
-    field.innerHTML = ''; 
-    if (!comments.length) {
-        return;
-    } 
-
-    comments.forEach((comment, index) => {
-        html += `
-            <div class="comment-add">
-                <img src="${img}" alt="" width="50" height="50"> 
-                <label class="form-check-label" for="action-${index}">
-                ${author}: ${comment}
-                </label>
-            </div>
-        `;
-    });
-
-
-    if (commentsPast != undefined || commentsPast != null ) {
-        field.innerHTML = commentsPast; 
-        field.innerHTML += html;
-    }
-    else {
-        field.innerHTML += html;
-    }
-
-    localStorage.removeItem("comments");
+    field.innerHTML = commentsPast;
+    field.innerHTML += commentHTML;
+   /*  localStorage.removeItem("comments"); */
     localStorage.setItem("comments", field.innerHTML);
-    str.value = "";
+    str.value = ""; 
 }
 
 str.oninput = () => {
