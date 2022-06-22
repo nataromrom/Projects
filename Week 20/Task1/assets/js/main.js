@@ -84,17 +84,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
             <div><span>Подробнее: </span> ${h.about}</div>
             <label for="mark"><span>Оценка героя:</span> </label>
             <input type="number" id="mark" name="${h.hero}" min="1" max="10" value= ${obj[h.hero]}>
+            <div class="error"></div>
         </div>`
     }
     document.querySelector(".Container").innerHTML = heroesContent;
 
-    let inputmarks = document.querySelectorAll("input");
+let inputmarks = document.querySelectorAll("input");
     for (let i = 0; i < inputmarks.length; i++) {
-            inputmarks[i].onchange = function(e) {
+            inputmarks[i].onchange = function() {
+                if (inputmarks[i].value > 10 || inputmarks[i].value < 1) {
+                    inputmarks[i].value ="";
+                    inputmarks[i].nextElementSibling.innerHTML = "Допустимая оценка 1-10";
+                } else {
+                    inputmarks[i].nextElementSibling.innerHTML = "";
+                }
                 obj[inputmarks[i].name] = inputmarks[i].value;
                 localStorage.setItem ("heroMarks", JSON.stringify(obj));
         }
     }; 
-
 });
 
