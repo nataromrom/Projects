@@ -1,7 +1,9 @@
 .Container {
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    background-image: url('../img/fon.jpg');
 }
 
 img {
@@ -14,9 +16,14 @@ img {
     margin-right: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
+    background-color: rgba(207, 189, 179, 0.6);
 }
 span {
     font-weight: bold;
+}
+
+input {
+    background-color: rgba(207, 189, 179, 0.6);
 }
 
 .error {
