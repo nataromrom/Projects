@@ -1,0 +1,180 @@
+.Container {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 80vw;
+
+}
+
+.chart {
+    max-width: 600px;
+}
+
+img {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 1em;
+    margin: 1.5em auto;
+    background-color: #29e;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    font-size: 1em;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.slider:nth-child(2) {
+    background-color: #ffc0cb;
+}
+
+.slider:nth-child(3) {
+    background-color: #A0FDBB;
+}
+
+.slider:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -0.5em;
+
+    width: 2em;
+    height: 2em;
+    margin-left: -1em;
+    border: solid 0.25em #fff;
+    border-radius: 1em;
+    background-color: inherit;
+
+    box-sizing: border-box;
+}
+
+.slider:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -1.5em;
+    width: 2em;
+    line-height: 1em;
+    margin-left: -1em;
+    text-align: center;
+}
+
+.draggable {
+    width: 25%;
+    min-height: 6.5em;
+    margin: 1rem 0 0 1rem;
+    background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;
+    touch-action: none;
+    user-select: none;
+}
+
+.dropzone {
+    background-color: #bfe4ff;
+    border: dashed 4px transparent;
+    border-radius: 15px;
+    padding: 10px;
+    height: 265px;
+    width: 650px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    position: relative;
+    right: -150px;
+    top: -20px;
+    z-index: -99;
+}
+
+.drop-active {
+    border-color: #aaa;
+}
+
+.drop-target {
+    background-color: #29e;
+    border-color: #fff;
+    border-style: solid;
+}
+
+.drag-drop {
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    min-width: 40px;
+    padding: 2em 0.5em;
+    margin: 1rem 0 0 1rem;
+    color: #fff;
+    font-size: 20px;
+    background-color: #29e;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    touch-action: none;
+    transform: translate(0px, 0px);
+
+    transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+    color: #000;
+    background-color: #A0FDBB;
+}
+
+.taskarea {
+    background-color: #ffc0cb;
+    border-radius: 15px;
+    width: 650px;
+    height: 291px;
+    position: absolute;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.chart {
+    width: 430px;
+    margin-right: 150px;
+}
+
+.date {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #f73454;
+    font-weight: bold;
+}
+
+h1 {
+    color: #29e;
+    font-size: 40px;
+}
+
+h2 {
+    color: #29e;
+    margin-bottom: 30px;
+}
+
+
+.titlewhite {
+    color: white;
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    text-shadow: rgb(185, 65, 65) 1px 0 20px; ;
+}
+
+span {
+    font-size: 23px;
+    font-style: italic;
+}
+
