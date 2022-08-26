@@ -1,0 +1,20 @@
+
+[ 
+    {
+        "tarifprise": 300,
+        "speed": 10
+    },
+    {
+        "tarifprise": 450,
+        "speed": 50
+    },
+    {
+        "tarifprise": 550,
+        "speed": 100,
+        "isPressed": true
+    },
+    {
+        "tarifprise": 1000,
+        "speed": 200
+    }
+]
