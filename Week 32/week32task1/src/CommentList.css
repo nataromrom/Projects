@@ -1,0 +1,55 @@
+.newComment {
+    background-color: #aeacf86c;
+    width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    height: 30px;
+}
+
+.bn632-hover {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn24 {
+    background-image: linear-gradient(to right,
+            #6253e1,
+            #852d91,
+            #a3a1ff,
+            #f24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+input {
+    border: 1px solid #6253e1;
+    border-radius: 30px;
+    height: 35px;
+    width: 450px;
+}
+
+h1 {
+    color: #9553e1;
+}
